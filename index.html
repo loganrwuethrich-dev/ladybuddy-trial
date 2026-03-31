@@ -1,88 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LadyBUDDY</title>
-```
-
-**Step 6: Test it locally**
-
-In your terminal (still inside the `ladybuddy` folder):
-```
-npm run dev
-```
-
-It will say something like `Local: http://localhost:5173/`. Open that URL in your browser. You should see the full LadyBUDDY app running. If it works, press `Ctrl+C` in the terminal to stop the server.
-
----
-
-## Phase 2 — Push to GitHub
-
-**Step 7: Create a GitHub account** (if you don't have one)
-
-Go to [github.com](https://github.com) and sign up for free.
-
-**Step 8: Create a new repository**
-
-1. Click the **+** button in the top right corner of GitHub, then **New repository**
-2. Name it `ladybuddy`
-3. Leave it set to **Public** (so reviewers can see it)
-4. **Do NOT** check "Add a README" or any other boxes
-5. Click **Create repository**
-
-GitHub will show you a page with setup instructions. You'll need the commands from the section that says "push an existing repository from the command line."
-
-**Step 9: Push your code to GitHub**
-
-Back in your terminal (inside the `ladybuddy` project folder), run these commands one at a time:
-```
-git init
-git add .
-git commit -m "Initial LadyBUDDY prototype"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/ladybuddy.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your actual GitHub username. It will ask for your GitHub credentials the first time.
-
----
-
-## Phase 3 — Deploy on Vercel
-
-**Step 10: Create a Vercel account**
-
-Go to [vercel.com](https://vercel.com) and click **Sign Up**. Choose **Continue with GitHub** — this links your accounts and makes everything automatic.
-
-**Step 11: Import your project**
-
-1. On the Vercel dashboard, click **Add New → Project**
-2. You'll see a list of your GitHub repos. Find **ladybuddy** and click **Import**
-3. Vercel will auto-detect that it's a Vite project. The settings should show:
-   - **Framework Preset:** Vite
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-4. Click **Deploy**
-
-Vercel will build your project (takes about 30-60 seconds). When it's done, you'll see a success screen with a URL like:
-```
-https://ladybuddy.vercel.app
-```
-
-That's your live app. Anyone with that link can open it and use the full prototype.
-
----
-
-## After Deployment
-
-Every time you make changes and push to GitHub:
-```
-git add .
-git commit -m "Description of what you changed"
-git push
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <title>LadyBUDDY</title>
   </head>
   <body>
     <div id="root"></div>
